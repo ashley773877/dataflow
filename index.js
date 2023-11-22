@@ -11,12 +11,13 @@ console.log(weeklygrowth)
 const totalspacerequired = weeklygrowth * minimumspaceperplant
 console.log (totalspacerequired, area * 0.8)
 
-if ( totalspacerequired > area * 0.8 ) {
+try{
+ if ( totalspacerequired > area * 0.8 ) {
+    throw new error("not enough space to accomodate the plants");
     console.log("plants need to be destryoed")
 }   else if (totalspacerequired >= 0.5 * area && totalspacerequired <= 0.8 * area){
-    
-    console.log("growth is still being monitored")
-} else if ( totalspacerequired <= 0.5 * area ){
+    console.log("growth is still being monitored");
+} else if (totalspacerequired <= 0.5 * area ){
     console.log(" we have room for more plants")
 }
  
@@ -39,7 +40,9 @@ console.log(`Radius of the expanded garden: ${expandedRadius.toFixed(2)} meters`
 console.log(`Additional space required for 100 plants: ${additionalSpace.toFixed(2)} square meters`);
 
 // starting section 3
-try (error) {
+} catch (error) {
     console.error(error.message);
-}
+} 
+    console.error(error.message);
+
 
