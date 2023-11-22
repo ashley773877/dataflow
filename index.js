@@ -5,7 +5,7 @@ console.log(area)
 
 const minimumspaceperplant = 0.8
 const initialplants = 20
-   let weeks = 4
+   let weeks = 10
 const weeklygrowth = weeks * initialplants
 console.log(weeklygrowth)
 const totalspacerequired = weeklygrowth * minimumspaceperplant
@@ -21,6 +21,9 @@ if ( totalspacerequired > area * 0.8 ) {
 }
  
 // section 2 
+//decalre const var
+
+
 
 
 
