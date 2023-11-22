@@ -21,7 +21,16 @@ if ( totalspacerequired > area * 0.8 ) {
 }
  
 // section 2 
-//decalre const var
+let cumulativeArea = 0;
+let currentPlants = initialplants;
+
+// calculating cumuative area and radius for each week
+for (let week = 1; week <= weeks; week++) {
+    const areaReuqired = currentPlants * minimumspaceperplant;
+    cumulativeArea += areaReuqired;
+    
+    currentPlants *= 2; // double the number of plants for the next week 
+}
 
 
 
