@@ -39,5 +39,7 @@ console.log(`Radius of the expanded garden: ${expandedRadius.toFixed(2)} meters`
 console.log(`Additional space required for 100 plants: ${additionalSpace.toFixed(2)} square meters`);
 
 // starting section 3
-catch (error)
+try (error) {
+    console.error(error.message);
+}
 
