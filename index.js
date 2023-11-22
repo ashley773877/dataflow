@@ -19,7 +19,8 @@ if ( totalspacerequired > area * 0.8 ) {
 } else if ( totalspacerequired <= 0.5 * area ){
     console.log(" we have room for more plants")
 }
-
+ 
+// section 2 
 
 
 
