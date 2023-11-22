@@ -38,5 +38,6 @@ console.log(`Total cumulative area required after ${weeks} weeks: ${cumulativeAr
 console.log(`Radius of the expanded garden: ${expandedRadius.toFixed(2)} meters`);
 console.log(`Additional space required for 100 plants: ${additionalSpace.toFixed(2)} square meters`);
 
+// starting section 3
 
 
