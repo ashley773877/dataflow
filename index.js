@@ -42,7 +42,7 @@ console.log(`Additional space required for 100 plants: ${additionalSpace.toFixed
 // starting section 3
 } catch (error) {
     console.error(error.message);
-} 
+}
     console.error(error.message);
 
 
