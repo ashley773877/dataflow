@@ -24,15 +24,19 @@ if ( totalspacerequired > area * 0.8 ) {
 let cumulativeArea = 0;
 let currentPlants = initialplants;
 
-// calculating cumuative area and radius for each week
+// calculating cumualtive area and radius for each week
 for (let week = 1; week <= weeks; week++) {
     const areaReuqired = currentPlants * minimumspaceperplant;
     cumulativeArea += areaReuqired;
     
     currentPlants *= 2; // double the number of plants for the next week 
 }
+const expandedRadius = Math.sqrt(cumulativeArea / PI);
+const additionalSpace = (100 * minimumspaceperplant) - cumulativeArea;
 
-
+console.log(`Total cumulative area required after ${weeks} weeks: ${cumulativeArea.toFixed(2)} square meters`);
+console.log(`Radius of the expanded garden: ${expandedRadius.toFixed(2)} meters`);
+console.log(`Additional space required for 100 plants: ${additionalSpace.toFixed(2)} square meters`);
 
 
 
